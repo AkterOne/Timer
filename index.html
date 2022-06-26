@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="timer-block">
+            <div class="wrapper-time">
+                <p class="name-minute">Минуты</p>
+                <div class="minute-block">
+                    <input type="button" value="&and;" class="btn minute-up" id="minute-up">
+                    <h2 class="minute" id="minute">0</h2>
+                    <input type="button" value="&or;" class="btn minute-down" id="minute-down">
+                </div>
+            </div>
+            <div class="wrapper-time">
+                <p class="name-second">Секунды</p>
+                <div class="second-block">
+                    <input type="button" value="&and;" class="btn second-up" id="second-up">
+                    <h2 class="second" id="second">0</h2>
+                    <input type="button" value="&or;" class="btn second-down" id="second-down">
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn-s stop" id="stop">Clear</button>
+        <button type="submit" class="btn-s start-pause" id="start-pause" value="true">Start</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
