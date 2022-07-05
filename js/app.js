@@ -57,18 +57,15 @@ startPause.onclick = () => {
             //милисекунды
             if (millisecond >= 1) {
                 millisecond--
-                console.log("hi");
             //секунды
             } else if (second.innerHTML > 0) {
                 second.innerHTML--
                 millisecond = 100
-                console.log("hi2")
             //Минуты
             } else if (minute.innerHTML > 0 || second.innerHTML === 0) {
                 minute.innerHTML--
                 second.innerHTML = 59
                 millisecond = 100
-                console.log("hi3")
             } else if (millisecond === 0 || second.innerHTML === 0 || minute.innerHTML === 0){
                 clearInterval(interval)
                 startPause.innerHTML = 'Start'
